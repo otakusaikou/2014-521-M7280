@@ -1,0 +1,25 @@
+filenames = {'igs17906.clk_30s', 'igs17910.clk_30s', 'igs17911.clk_30s'});
+
+count = 1;
+T2 = []; 
+dt = [];
+SID = 'AS G01';
+for i = 1:3
+    fin = fopen(filenames{1, i});   
+    line = fgets(fin);
+    while line ~= -1
+        %check epoch lines
+        if (isempty(strfind(line,SID)) == 0)
+            tarr = regexp(line(20:35), ' ','split');
+            tarr = cellfun(@str2num, tarr(strcmp(tarr, '') ~= 1));
+    
+            dt = [dt;str2num(line(41:60))];      
+        end    
+        count = count+1; 
+        line = fgets(fin);
+    end
+
+for i=-86400:30:172770
+    T2 = [T2, i];
+end
+fclose(fin);

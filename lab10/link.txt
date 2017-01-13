@@ -1,0 +1,1 @@
+ftp://www.ngs.noaa.gov/cors/rinex/2014/124/arbt/

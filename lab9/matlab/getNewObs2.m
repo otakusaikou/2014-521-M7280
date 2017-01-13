@@ -1,0 +1,9 @@
+function [Xs, Ys, Zs, S, Sr] = getNewObs2(pp, lp, hp, X, Y, Z, R, Xer, Yer, Zer, dS)
+xp = (R + hp) * cos(pp) * cos(lp);
+yp = (R + hp) * cos(pp) * sin(lp);
+zp = (R + hp) * sin(pp);
+Xs = X + Xer;
+Ys = Y + Yer;
+Zs = Z + Zer;
+S = ((X - xp).^2 + (Y - yp).^2 + (Z - zp).^2).^0.5;
+Sr = S + dS;

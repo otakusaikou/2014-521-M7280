@@ -1,0 +1,13 @@
+function [x, y, z] = lph2xyz(l, p, h, a, e0)
+% x (output) x value of input point in global elliposidal refrence frame
+% y (output) y value of input point in global elliposidal refrence frame
+% z (output) z value of input point in global elliposidal refrence frame
+% a (input) length of semi-major axis
+% e0 (input) eccentricity 
+% l (input) longitude
+% p (input) latitude
+% h (input) spherical height
+% r (input) radius of sphere
+x = (r + h) * cos(p) * cos(l);
+y = (r + h) * cos(p) * sin(l);
+z = (r + h) * sin(p);

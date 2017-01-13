@@ -1,0 +1,82 @@
+
+
+  
+
+The NGS Data Sheet
+See file dsdata.txt for more information about the datasheet.
+
+PROGRAM = datasheet95, VERSION = 8.4
+1        National Geodetic Survey,   Retrieval Date = MARCH 22, 2014
+ DM7460 ***********************************************************************
+ DM7460  CORS        -  This is a GPS Continuously Operating Reference Station.
+ DM7460  DESIGNATION -  CHICKENM61AK2006 CORS ARP
+ DM7460  CORS_ID     -  AC61
+ DM7460  PID         -  DM7460
+ DM7460  STATE/COUNTY-  AK/SOUTHEAST FAIRBANKS
+ DM7460  COUNTRY     -  US
+ DM7460  USGS QUAD   -  EAGLE A-3
+ DM7460
+ DM7460                         *CURRENT SURVEY CONTROL
+ DM7460  ______________________________________________________________________
+ DM7460* NAD 83(2011) POSITION- 64 01 45.33240(N) 142 04 32.94873(W)   ADJUSTED  
+ DM7460* NAD 83(2011) ELLIP HT-   745.090 (meters)        (12/??/11)   ADJUSTED
+ DM7460* NAD 83(2011) EPOCH   -  2010.00
+ DM7460* NAVD 88 ORTHO HEIGHT -          **(meters)           **(feet)           
+ DM7460  ______________________________________________________________________
+ DM7460  NAD 83(2011) X  - -2,209,479.700 (meters)                     COMP
+ DM7460  NAD 83(2011) Y  - -1,721,531.101 (meters)                     COMP
+ DM7460  NAD 83(2011) Z  -  5,711,813.881 (meters)                     COMP
+ DM7460  GEOID HEIGHT    -          9.89  (meters)                     GEOID12A
+ DM7460
+ DM7460.Formal positional accuracy estimates are not available for this CORS
+ DM7460.because its coordinates were determined in part using modeled
+ DM7460.velocities. Approximate one-sigma accuracies for latitude, longitude,
+ DM7460.and ellipsoid height can be obtained from the short-term time series.
+ DM7460.Additional information regarding modeled velocities is available on
+ DM7460.the CORS Coordinates and Multi-Year CORS Solution FAQ web pages.
+ DM7460
+ DM7460.The coordinates were established by GPS observations
+ DM7460.and adjusted by the National Geodetic Survey in December 2011.
+ DM7460
+ DM7460.NAD 83(2011) refers to NAD 83 coordinates where the reference 
+ DM7460.frame has been affixed to the stable North American Tectonic Plate. 
+ DM7460
+ DM7460.The coordinates are valid at the epoch date displayed above
+ DM7460.which is a decimal equivalence of Year/Month/Day.
+ DM7460
+ DM7460.The PID for the CORS L1 Phase Center is DM7461.
+ DM7460
+ DM7460.The XYZ, and position/ellipsoidal ht. are equivalent.
+ DM7460
+ DM7460.The ellipsoidal height was determined by GPS observations
+ DM7460.and is referenced to NAD 83.
+ DM7460
+ DM7460
+ DM7460                          SUPERSEDED SURVEY CONTROL
+ DM7460
+ DM7460  NAD 83(CORS)-  64 01 45.33205(N)    142 04 32.94970(W) AD(2003.00) c
+ DM7460  ELLIP H (05/??/11)  745.102  (m)                       GP(2003.00) c c
+ DM7460
+ DM7460.Superseded values are not recommended for survey control.
+ DM7460
+ DM7460.NGS no longer adjusts projects to the NAD 27 or NGVD 29 datums.
+ DM7460.See file dsdata.txt to determine how the superseded data were derived.
+ DM7460
+ DM7460_U.S. NATIONAL GRID SPATIAL ADDRESS: 7WDM4743600718(NAD 83)
+ DM7460
+ DM7460_MARKER: STATION IS THE ANTENNA REFERENCE POINT OF THE GPS ANTENNA
+ DM7460
+ DM7460                          STATION DESCRIPTION
+ DM7460
+ DM7460'DESCRIBED BY NATIONAL GEODETIC SURVEY 2011
+ DM7460'STATION IS A GPS CORS.  LATEST INFORMATION INCLUDING POSITIONS AND
+ DM7460'VELOCITIES ARE AVAILABLE IN THE COORDINATE AND LOG FILES ACCESSIBLE
+ DM7460'BY ANONYMOUS FTP OR THE WORLDWIDE WEB.
+ DM7460'   ftp://cors.ngs.noaa.gov/cors/README.txt
+ DM7460'   ftp://cors.ngs.noaa.gov/cors/coord/coord_08 
+ DM7460'   ftp://cors.ngs.noaa.gov/cors/station_log 
+ DM7460'   http://geodesy.noaa.gov/CORS
+
+ *** retrieval complete.
+ Elapsed Time = 00:00:03
+

@@ -1,0 +1,4 @@
+function readdata
+impt = importdata('resultOfPart1a.txt');
+data = impt.data;
+disp(data);

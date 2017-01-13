@@ -1,0 +1,17 @@
+function [x, y, z] = enu2xyz(n, e, u, xp, yp, zp, r)
+% n (input) n value of cartesian reference frame
+% e (input) e value of cartesian reference frame
+% u (input) u value of cartesian reference frame
+% xp (input) z value of local origin in global spherical refrence frame
+% yp (input) y value of local origin in global spherical refrence frame
+% zp (input) z value of local origin in global spherical refrence frame
+% r (input) radius of sphere
+[lp, pp, hp] = xyz2lph(xp, yp, zp, r);
+Ry = [cos((pi / 2) - pp), 0, -sin((pi / 2) - pp); 0, 1, 0; sin((pi / 2) - pp), 0, cos((pi / 2) - pp)];
+Rz = [cos(lp - pi), sin(lp - pi), 0; -sin(lp - pi), cos(lp - pi), 0; 0, 0, 1];
+T = [xp; yp; zp];
+X = [-n; e; u];
+Ans = Rz. * Ry.T * X + T;
+x = Ans(1);
+y = Ans(2);
+z = Ans(3);
