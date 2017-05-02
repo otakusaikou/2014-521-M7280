@@ -1,13 +1,13 @@
 Satellite Geodesy Homework Assignments
 ==========
 
-##Description
+## Description
 Homework assignments and final project for NTU's [521-M7280](https://goo.gl/Lf418j) 2014.  
 Written with Python and Matlab Code.
 
-##Requirements
+## Requirements
 
-###Python
+### Python
 This project require [Python v2.7.X](https://www.python.org) and the following modules to be installed.
 
 -[Matplotlib](http://matplotlib.org)  
@@ -15,5 +15,5 @@ This project require [Python v2.7.X](https://www.python.org) and the following m
 -[Scipy](http://www.scipy.org)  
 
 
-###Matlab
+### Matlab
 MATLAB R2010a or higher.
