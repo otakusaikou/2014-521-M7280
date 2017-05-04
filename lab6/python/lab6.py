@@ -151,9 +151,15 @@ def draw2Dmap(year, mon, day, h, m, T, L0, P0, H, fig, x, y, z):
 
     fig = plt.figure(fig)
     ax = fig.add_subplot(211)
+    ax.grid()
     plt.title("Longitude&Latitude", size=25)
-    ax.plot(T, L0)
-    ax.plot(T, P0)
+    st = 0
+    for cur in range(len(L0) - 1):
+        if abs(L0[cur + 1] - L0[cur]) > 150:
+            ax.plot(T[st:cur + 1], L0[st:cur + 1], 'b-')
+            st = cur + 1
+    ax.plot(T[st:], L0[st:], 'b-')
+    ax.plot(T, P0, 'g-')
     ax.annotate("Longuitude", xy=(T[-1], L0[-1]), 
         xytext=(-50, 70), textcoords="offset points", va="center",
         size=15, 
@@ -183,6 +189,7 @@ def draw2Dmap(year, mon, day, h, m, T, L0, P0, H, fig, x, y, z):
     ax.set_ylabel("Values (deg)", fontsize = 15)
     
     ax = fig.add_subplot(212)
+    ax.grid()
     plt.title("Height", size=25)
     ax.plot(T, H)
     ax.annotate("Height", xy=(T[-1], H[-1]), 
